@@ -5,11 +5,22 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Pfeffermediaeval';
+    src:url('fonts/Pfeffermediaeval.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 header{
     background-color: darkgray;
     width: 100vw;
     height: 3vw;
+}
+
+#text{
+    font-family: "Pfeffermediaeval";
 }
 
 
@@ -33,6 +44,7 @@ header{
     position: relative;
     z-index: 1;
     text-align: center;
+    
 }
 
 .btn:focus {
@@ -88,6 +100,7 @@ header{
     display: inline-block;
     text-align: justify;
     letter-spacing: 0.13vw;
+    font-family: "Pfeffermediaeval";
 }
 
 .logomar{
@@ -131,6 +144,7 @@ header{
     align-items: center;
     color: white;
     margin-left: 0.2vw;
+    font-family: "Pfeffermediaeval";
 }
 
 .inside{
@@ -200,6 +214,7 @@ header{
     width: 17vw;
     height: 2.5vw;
     font-size: 1vw;
+    font-family: "Pfeffermediaeval";
 }
 
 @media (orientation:portrait) {
