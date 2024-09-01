@@ -28,7 +28,7 @@ header{
     background: none;
     border: none;
     padding: 0px 20px;
-    font-size: 16px;
+    font-size: 1vw;
     cursor: pointer;
     position: relative;
     z-index: 1;
@@ -55,11 +55,11 @@ header{
 
 
 .btn.active ~ .line {
-    left: 0;
+    left: 3%;
 }
 
 .btn:nth-child(2).active ~ .line {
-    left: 50%;
+    left: 45%;
     width: 50%;
 }
 
@@ -79,29 +79,29 @@ header{
 .signin{
     margin-left: 41vw;
     margin-top: 2vw;
-    font-size: 14px;
+    font-size: 1vw;
 }
 
 .singlc{
     width: 22vw;
-    font-size: 18px;
+    font-size: 1vw;
     display: inline-block;
     text-align: justify;
-    letter-spacing: 3px;
+    letter-spacing: 0.13vw;
 }
 
 .logomar{
     font-family: "Chintabelia";
-    font-size: 56px;
+    font-size: 3vw;
     width: 30vw;
     margin-left: 1vw;
 }
 
 .signhelp{
     margin-top: 1vw;
-    margin-left: 5vw;
+    margin-left: 5.5vw;
     color: lightslategray;
-    font-size: 16px;
+    font-size: 0.8vw;
 
 }
 
@@ -126,7 +126,7 @@ header{
 }
 
 .vkon{
-    font-size: 24px;
+    font-size: 1.5vw;
     display: flex;
     align-items: center;
     color: white;
@@ -148,7 +148,7 @@ header{
 .or{
     margin-left: 1vw;
     color: lightslategray;
-    font-size: 16px;
+    font-size: 1vw;
 }
 
 .line1{
@@ -169,12 +169,12 @@ header{
     margin-top: 0.5vw;
     width: 100%;
     padding: 10px 40px 10px 10px; /* Отступы для иконки и текста */
-    font-size: 16px;
+    font-size: 1vw;
     border: 2px solid #ccc;
     border-radius: 5px;
     outline: none;
     box-sizing: border-box;
-    padding-left: 40px;
+    padding-left: 2.5vw;
 }
 
 .input-container svg {
@@ -183,8 +183,8 @@ header{
     top: 50%;
     left:10px; /* Расстояние от правого края */
     transform: translateY(-50%); /* Вертикальное центрирование */
-    width: 24px; /* Ширина иконки */
-    height: 24px; /* Высота иконки */
+    width: 1.2vw; /* Ширина иконки */
+    height: auto; /* Высота иконки */
 }
 
 .name-and-pass{
@@ -199,5 +199,29 @@ header{
     color:white;
     width: 17vw;
     height: 2.5vw;
-    font-size: 17px;
+    font-size: 1vw;
+}
+
+@media (orientation:portrait) {
+    header{
+        height: 6vh;
+    }
+
+    .btn{
+        font-size: 2vh;
+        margin-left: -5vw;
+    }
+
+    .btn.active{
+        margin-left: -15vw;
+    }
+
+    .logo{
+        height: 10vh;
+        width: auto;
+    }
+
+    .logomar{
+        font-size: 13vw;
+    }
 }
